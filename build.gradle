@@ -1,23 +1,20 @@
 buildscript {
-    ext.serenityCoreVersion = '3.3.0'
-    ext.serenityReport = '3.4.2'
+    ext.serenityCoreVersion = '3.9.8'
 
     repositories {
         mavenLocal()
         mavenCentral()
         jcenter()
-
     }
 
-
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:$serenityReport")
+        classpath("net.serenity-bdd:serenity-gradle-plugin:$serenityCoreVersion")
         classpath "net.serenity-bdd:serenity-single-page-report:$serenityCoreVersion"
     }
 }
 
 plugins {
-    id "net.serenity-bdd.serenity-gradle-plugin" version "${serenityCoreVersion}"
+    id "net.serenity-bdd.serenity-gradle-plugin" version "$serenityCoreVersion"
     id 'java'
     id 'eclipse'
     id 'idea'
@@ -26,15 +23,15 @@ plugins {
 
 defaultTasks 'clean','test','aggregate'
 
-group 'com.youtube'
+group 'com.exito'
 version '1.0-SNAPSHOT'
 
 
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
     mavenLocal()
@@ -67,7 +64,7 @@ dependencies {
     implementation "ch.qos.logback:logback-core:${logVersion}"
     implementation "org.json:json:${jsonVersion}"
 
-    // implementation 'io.github.bonigarcia:webdrivermanager:5.6.3'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.4'
     // implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
 
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
@@ -81,9 +78,14 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
-    testLogging.showStandardStreams = true
-    systemProperties System.getProperties()
+    useJUnit {
+        include "*/";
+        gradle.startParameter.continueOnFailure = true
+        testLogging.showStandardStreams = true
+        systemProperties System.getProperties()
+        systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    }
+
 }
 
 serenity {

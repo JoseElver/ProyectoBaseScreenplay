@@ -1,63 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.youtube.runners.Runner" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-28T22:24:49" hostname="DESKTOP-H392E30" time="22.143">
+<testsuite name="com.youtube.runners.Runner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-H392E30" time="0.0">
   <properties/>
-  <testcase name="reproduccion exitosa." classname="com.youtube.runners.Runner" time="22.143"/>
-  <system-out><![CDATA[2024-01-28 17:24:49,252 INFO   r.core.plugin.SerenityReporter: Running feature from file:///D:/Cursos/Proyectos%20Java/EspacioConocimiento/src/test/resources/features/ReproducirCancion.feature
-2024-01-28 17:24:49,447 INFO   logging.ConsoleLoggingListener: 
-
--------------------------------------------------------------------------------------
-     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
-    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
-   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
-    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
-.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
-|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
-                                                                                     
- News and tutorials at http://www.serenity-bdd.info                                  
- Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
- Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
--------------------------------------------------------------------------------------
-
-2024-01-28 17:24:49,455 INFO   logging.ConsoleLoggingListener: Test Suite Started: Reproducir una cancion en youtube.
-2024-01-28 17:24:49,476 INFO   r.core.plugin.SerenityReporter: Running feature from file:///D:/Cursos/Proyectos%20Java/EspacioConocimiento/src/test/resources/features/ReproducirCancion.feature
-2024-01-28 17:24:49,482 INFO   logging.ConsoleLoggingListener: Test Suite Started: Reproducir una cancion en youtube.
-2024-01-28 17:24:49,558 INFO   r.core.plugin.SerenityReporter: Running feature from file:///D:/Cursos/Proyectos%20Java/EspacioConocimiento/src/test/resources/features/ReproducirCancion.feature
-2024-01-28 17:24:49,576 INFO   logging.ConsoleLoggingListener: 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-reproduccion exitosa.(reproducir-una-cancion-en-youtube.;reproduccion-exitosa.)
---------------------------------------------------------------------------------
-2024-01-28 17:24:50,057 INFO   ers.DownloadableDriverProvider: Using automatically driver download
-2024-01-28 17:24:50,488 INFO   onigarcia.wdm.WebDriverManager: Using msedgedriver 121.0.2277.83 (resolved driver for Edge 121)
-2024-01-28 17:24:50,514 INFO   onigarcia.wdm.WebDriverManager: Exporting webdriver.edge.driver as C:\Users\Jose\.cache\selenium\msedgedriver\win64\121.0.2277.83\msedgedriver.exe
-2024-01-28 17:25:10,562 INFO   logging.ConsoleLoggingListener: 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-reproduccion exitosa.
-----------------------------------------------------------------------
-]]></system-out>
-  <system-err><![CDATA[?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
-?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
-?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
-?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
-?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
-?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
-?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
-?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
-?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
-?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
-?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
-?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
-?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
-?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
-?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
-?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J(W): Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J(W): Ignoring binding found at [jar:file:/C:/Users/Jose/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.10/f69d97ef3335c6ab82fc21dfb77ac613f90c1221/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J(W): See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 ]]></system-err>
 </testsuite>

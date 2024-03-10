@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Reproducir una cancion en youtube." tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-10T03:28:06" hostname="DESKTOP-H392E30" time="18.351">
+  <properties/>
+  <testcase name="reproduccion exitosa." classname="Reproducir una cancion en youtube." time="18.351"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[mar. 09, 2024 10:28:08 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+mar. 09, 2024 10:28:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 122
+mar. 09, 2024 10:28:11 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

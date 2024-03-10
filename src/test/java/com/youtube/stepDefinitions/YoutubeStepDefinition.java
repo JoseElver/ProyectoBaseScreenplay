@@ -7,12 +7,15 @@ import io.cucumber.java.Before;
 import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import net.thucydides.core.util.EnvironmentVariables;
 import org.hamcrest.Matchers;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class YoutubeStepDefinition {
+
+    private static EnvironmentVariables environmentVariables;
 
     @Before
     public void setStage(){
@@ -21,8 +24,9 @@ public class YoutubeStepDefinition {
 
     @Dado("que el usuario abre el navegador en la pagina de youtube")
     public void queElUsuarioAbreElNavegadorEnLaPaginaDeYoutube() {
+        String baseUrl = environmentVariables.optionalProperty("environments.qa.base.url").get();
         theActorCalled("user").wasAbleTo(
-                Open.url("https://www.youtube.com/")
+                Open.url(baseUrl)
         );
 
     }
